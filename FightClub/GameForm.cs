@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace FightClub
 {
-    public partial class Form1 : Form
+    public partial class GameForm : Form
     {
-        public Form1()
+        Game game = new Game(TransferData.Name);
+
+        public GameForm()
         {
             InitializeComponent();
+        }
+
+        private void HeadHitBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
